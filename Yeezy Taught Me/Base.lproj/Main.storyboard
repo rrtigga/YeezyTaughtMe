@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Yeezy_Taught_Me" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uf8-FG-P4p">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rj1-TS-e7q">
+                                        <rect key="frame" x="125" y="31" width="350" height="199"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="199" id="Aj1-AX-r2U"/>
+                                            <constraint firstAttribute="width" constant="350" id="sRK-Si-FZu"/>
+                                        </constraints>
+                                        <string key="text">Despite his breakouts and celebrity antics, Kanye West is one of the most influential people to date. Here are some of the most outrageous things we learned from him.</string>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="rj1-TS-e7q" firstAttribute="top" secondItem="uf8-FG-P4p" secondAttribute="top" constant="31" id="UDR-3z-yU6"/>
+                                    <constraint firstItem="rj1-TS-e7q" firstAttribute="centerX" secondItem="uf8-FG-P4p" secondAttribute="centerX" id="ajo-WA-jgL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uf8-FG-P4p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="UQD-Z4-PMg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uf8-FG-P4p" secondAttribute="trailing" constant="-20" id="Vcx-tN-YDR"/>
+                            <constraint firstItem="uf8-FG-P4p" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="b8V-qy-g2J"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uf8-FG-P4p" secondAttribute="bottom" id="lyT-f2-mYM"/>
+                            <constraint firstItem="uf8-FG-P4p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="sOL-Mt-Tgv"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="UQD-Z4-PMg"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="OversetView" destination="uf8-FG-P4p" id="kUV-YI-e83"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="285" y="370"/>
+        </scene>
+    </scenes>
+</document>
