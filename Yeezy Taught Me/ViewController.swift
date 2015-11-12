@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var YeezyButton: UIButton!
     @IBOutlet var OversetView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +19,8 @@ class ViewController: UIViewController {
         //set Kanye Wallpaper as the background
         OversetView.backgroundColor = UIColor(patternImage: UIImage(named: "KanyeWallpaper.jpg")!)
         OversetView.alpha = 0.5
+        YeezyButton.layer.cornerRadius = 10
+        
         
 
     }
