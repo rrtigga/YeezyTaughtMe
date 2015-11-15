@@ -30,10 +30,10 @@
                                 </constraints>
                                 <string key="text">Despite his breakouts and celebrity antics, Kanye West is one of the most influential people to date. Here are some of the most outrageous things we learned from him.</string>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brk-jL-vyn">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brk-jL-vyn">
                                 <rect key="frame" x="162" y="450" width="276" height="66"/>
                                 <color key="backgroundColor" red="0.2233467487373737" green="0.2233467487373737" blue="0.2233467487373737" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -49,12 +49,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rj1-TS-e7q" secondAttribute="bottom" constant="341" id="7j5-zv-uCe"/>
+                            <constraint firstItem="brk-jL-vyn" firstAttribute="centerX" secondItem="uf8-FG-P4p" secondAttribute="centerX" id="FW2-PC-I07"/>
                             <constraint firstItem="uf8-FG-P4p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="UQD-Z4-PMg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uf8-FG-P4p" secondAttribute="trailing" constant="-20" id="Vcx-tN-YDR"/>
                             <constraint firstItem="rj1-TS-e7q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="Z3z-to-BbH"/>
                             <constraint firstItem="uf8-FG-P4p" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="b8V-qy-g2J"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uf8-FG-P4p" secondAttribute="bottom" id="lyT-f2-mYM"/>
                             <constraint firstItem="uf8-FG-P4p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="sOL-Mt-Tgv"/>
+                            <constraint firstItem="brk-jL-vyn" firstAttribute="top" secondItem="rj1-TS-e7q" secondAttribute="bottom" constant="191" id="tEF-oV-zwt"/>
                             <constraint firstItem="rj1-TS-e7q" firstAttribute="centerX" secondItem="uf8-FG-P4p" secondAttribute="centerX" id="tlG-6B-BQG"/>
                         </constraints>
                         <variation key="default">
@@ -64,6 +66,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="KanyeText" destination="rj1-TS-e7q" id="xb0-8I-rNg"/>
                         <outlet property="OversetView" destination="uf8-FG-P4p" id="kUV-YI-e83"/>
                         <outlet property="YeezyButton" destination="brk-jL-vyn" id="Wdr-GY-7UD"/>
                     </connections>
